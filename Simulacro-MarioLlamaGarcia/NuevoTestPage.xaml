@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Simulacro_MarioLlamaGarcia.NuevoTestPage"
+             Title="NuevoTestPage">
+
+    <ScrollView>
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+        <!-- Título -->
+        <Label
+        Text="Nuevo Test"
+        Style="{StaticResource Headline}"
+        SemanticProperties.HeadingLevel="Level1"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"/>
+        
+        <!-- Introducir pregunta -->
+        <Entry
+            x:Name="Pregunta"
+            Placeholder="Introduzca su pregunta"/>
+        
+        <!-- Respuestas -->
+
+        <Label
+            Text=" Primera respuesta "
+            HorizontalOptions="Start"/>
+
+        <CheckBox
+                IsChecked="False"
+                HorizontalOptions="Start"/>
+
+        <Entry
+                    
+            x:Name="Respuestaa"
+            
+            Placeholder="Respuesta a"/>
+
+
+        <Label
+            Text=" Segunda respuesta "
+            HorizontalOptions="Start"/>
+
+        <CheckBox
+        IsChecked="False"
+        HorizontalOptions="Start"/>
+        
+
+        <Entry
+            x:Name="Respuestab"
+            Placeholder="Respuesta b"/>
+
+        <Label
+            Text="Tercera respuesta"
+            HorizontalOptions="Start"/>
+
+        <CheckBox
+        IsChecked="False"
+        HorizontalOptions="Start"/>
+
+        <Entry
+            x:Name="Respuestac"
+            Placeholder="Respuesta c"/>
+        
+        <!-- Guardar test -->
+
+        <Button
+        x:Name="CounterBtn"
+        Text="Guardar test" 
+        SemanticProperties.Hint="Counts the number of times you click"
+        Clicked="OnCounterClicked"
+        HorizontalOptions="Fill"/>
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
